@@ -1,4 +1,4 @@
-import React, {FC, useRef} from 'react';
+import React, {FC} from 'react';
 import styles from './Search.module.scss';
 import {ReactComponent as SearchIcon} from 'assets/icon-search.svg'
 import Button from "../Button/Button";

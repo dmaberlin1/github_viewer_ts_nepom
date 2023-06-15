@@ -7,7 +7,7 @@ interface ButtonProps {
 }
 
 const Button: FC<ButtonProps> = ({children,onClick}) => (
-  <button className={styles.Button} onClick={onClick}>
+  <button className={styles.button} onClick={onClick}>
     {children}
   </button>
 );
