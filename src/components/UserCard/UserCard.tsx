@@ -3,6 +3,7 @@ import styles from './UserCard.module.scss';
 import UserStat from "../UserStart/UserStat";
 import {LocalGithubUser} from "../../types";
 import UserTitle from "../UserTitle/UserTitle";
+import UserInfo from "../UserInfo/UserInfo";
 
 interface UserCardProps extends LocalGithubUser{}
 
@@ -17,6 +18,7 @@ const UserCard: FC<UserCardProps> = (props) => {
                 {props.bio ||'This profile has no bio'}
             </p>
             <UserStat repos={props.repos} followers={props.followers} following={props.following}/>
+            <UserInfo company={props.company} blog={props.blog} location={props.location} twitter={props.twitter}/>
         </div>
     );
 }

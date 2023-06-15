@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import styles from './InfoItem.module.scss';
 
-interface InfoItemProps {
+export interface InfoItemProps {
     icon: React.ReactNode,
     text?: string | null,
     isLink?: boolean
@@ -24,7 +24,7 @@ const InfoItem: FC<InfoItemProps> = ({icon, isLink, text}) => {
                            rel={'noreferrer'}
                         className={styles.link}
                         >
-                            currentText
+                            {currentText}
                         </a>)
                     : currentText}
             </div>

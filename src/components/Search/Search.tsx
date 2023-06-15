@@ -28,7 +28,7 @@ export const Search: FC<SearchProps> = ({hasError, onSubmit}) => {
   const handleSubmit=(event:React.FormEvent<HTMLFormElement & FormFields>)=>{
         event.preventDefault();
         const text=event.currentTarget.username.value;
-        if(text){
+        if(text.trim()){
             onSubmit(text)
             event.currentTarget.reset();
         }
